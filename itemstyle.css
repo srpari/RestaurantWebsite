@@ -136,9 +136,34 @@ img {
 }
 
 .instheading {
-  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.instheading h1 {
   text-align: center;
-  background-color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.instheading h1::after {
+  content: "";
+  height: 10px;
+  background: linear-gradient(10deg, #ffc600, #da7258);
+  direction: right;
+  width: 42%;
+  position: absolute;
+  right: 0px;
+}
+
+.instheading h1::before {
+  content: "";
+  height: 10px;
+  background: linear-gradient(10deg, #da7258, #ffc600);
+  direction: left;
+  width: 42%;
+  position: absolute;
+  left: 0px;
 }
 
 .imggallery {
