@@ -136,17 +136,38 @@ img {
 }
 
 .instheading {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center; /* making vertical centerign of all children */
+}
+
+.instheading::before,
+.instheading::after {
+  content: "";
+  flex: 1 1 auto; /* the first digint is 'flex-grow: 1', helps elemet to occupy all free space */
+  height: 10px;
+  background: linear-gradient(10deg, #ffc600, #da7258);
+}
+
+h3 {
+  flex: 0 1 auto; /* the first digint is flex-grow: 0 */
+  padding: 0 15px 0 15px;
+  font-size: 30px;
+}
+
+/*.instheading {
   position: relative;
   width: 100%;
 }
 
-.instheading h1 {
+.instheading h3 {
   text-align: center;
   position: relative;
   width: 100%;
 }
 
-.instheading h1::after {
+.instheading h3::after {
   content: "";
   height: 10px;
   background: linear-gradient(10deg, #ffc600, #da7258);
@@ -156,7 +177,7 @@ img {
   right: 0px;
 }
 
-.instheading h1::before {
+.instheading h3::before {
   content: "";
   height: 10px;
   background: linear-gradient(10deg, #da7258, #ffc600);
@@ -164,7 +185,7 @@ img {
   width: 42%;
   position: absolute;
   left: 0px;
-}
+} */
 
 .imggallery {
   display: grid;
