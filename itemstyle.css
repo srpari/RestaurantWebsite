@@ -22,6 +22,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .menu {
   list-style: none;
   background-color: #ffc600;
@@ -146,7 +147,7 @@ img {
 .instheading::after {
   content: "";
   flex: 1 1 auto; /* the first digint is 'flex-grow: 1', helps elemet to occupy all free space */
-  height: 10px;
+  height: 15px;
   background: linear-gradient(10deg, #ffc600, #da7258);
 }
 
@@ -196,4 +197,12 @@ h3 {
 
 .imggallery img {
   width: 100%;
+}
+
+/*--------------- media queries---------------------*/
+
+@media (max-width: 1200px) {
+  .topnav {
+    grid-template-columns: 1fr;
+  }
 }
