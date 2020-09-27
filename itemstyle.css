@@ -92,8 +92,9 @@ body {
 .feature {
   background-color: #fff;
   display: inline-flexbox;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center; */
+  place-items: center;
   text-align: center;
   font-size: 22px;
   padding: 20px;
@@ -114,6 +115,7 @@ body {
   grid-template-columns: 500px 1fr;
   background-color: #fff;
   align-items: center;
+  justify-content: center;
   height: 450px;
 }
 
@@ -139,8 +141,9 @@ img {
 .instheading {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center; /* making vertical centerign of all children */
+  /* justify-content: center;
+  align-items: center; */
+  place-items: center; /* making vertical centerign of all children */
 }
 
 .instheading::before,
